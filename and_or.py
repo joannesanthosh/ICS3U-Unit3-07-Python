@@ -9,14 +9,20 @@ def main():
     # this function uses a compound boolean statement
 
     # input
-    age = int(input("Enter your age: "))
+    user_age_as_string = input("Enter your age: ")
     print("")
 
     # process & output
-    if age >= 25 or age <= 50:
-        print("You passed the course.")
-    else:
-        print("You did not pass the course.")
+    try:
+        user_age_as_number = int(user_age_as_string)
+        if user_age_as_number >= 25 and user_age_as_number <= 50:
+            print("You are eligible to date my grand-daughter.")
+        else:
+            print("You are not eligible to date my grand-daughter.")
+    except ValueError:
+        print("{0} is not an integer".format(user_age_as_string))
+    finally:
+        print("Done.")
 
 
 if __name__ == "__main__":
