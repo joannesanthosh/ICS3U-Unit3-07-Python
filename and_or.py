@@ -15,7 +15,7 @@ def main():
     # process & output
     try:
         user_age_as_number = int(user_age_as_string)
-        if user_age_as_number >= 25 and user_age_as_number <= 50:
+        if user_age_as_number >= 25 and user_age_as_number <= 40:
             print("You are eligible to date my grand-daughter.")
         else:
             print("You are not eligible to date my grand-daughter.")
