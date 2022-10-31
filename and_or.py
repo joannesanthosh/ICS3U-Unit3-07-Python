@@ -16,11 +16,11 @@ def main():
     try:
         user_age_as_number = int(user_age_as_string)
         if user_age_as_number >= 25 and user_age_as_number <= 40:
-            print("You are eligible to date my grand-daughter.")
+            print("You are eligible to date my grandchild.")
         else:
-            print("You are not eligible to date my grand-daughter.")
+            print("You are not eligible to date my grandchild.")
     except ValueError:
-        print("{0} is not an integer".format(user_age_as_string))
+        print("{0} is not a valid input".format(user_age_as_string))
     finally:
         print("Done.")
 
